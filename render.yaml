@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: data-analytics-lifecycle
+    name: data-analysis
     runtime: python
     region: oregon
     plan: free

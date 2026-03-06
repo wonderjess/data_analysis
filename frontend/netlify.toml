@@ -5,7 +5,7 @@
 # Proxy API calls to the backend on Render
 [[redirects]]
   from = "/api/*"
-  to = "https://data-analytics-lifecycle.onrender.com/api/:splat"
+  to = "https://data-analysis-7ggr.onrender.com/api/:splat"
   status = 200
   force = true
 
