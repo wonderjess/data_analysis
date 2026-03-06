@@ -23,4 +23,4 @@ settings = Settings()
 # In production, allow overriding CORS via CORS_ORIGINS env var (comma-separated)
 _extra_origins = os.environ.get("CORS_ORIGINS_EXTRA")
 if _extra_origins:
-    settings.CORS_ORIGINS.extend([o.strip() for o in _extra_origins.split(",") if o.strip()])
+    settings.CORS_ORIGINS.extend([o.strip().rstrip("/") for o in _extra_origins.split(",") if o.strip()])
